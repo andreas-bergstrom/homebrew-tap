@@ -5,21 +5,21 @@
 class Gdui < Formula
   desc "Terminal UI for browsing your working-tree git diff as a sparse, collapsible file tree"
   homepage "https://github.com/andreas-bergstrom/gdui"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/andreas-bergstrom/gdui/releases/download/v0.3.0/gdui_0.3.0_darwin_amd64.tar.gz"
-      sha256 "b72435d60e565568a5922431c942d142901c3e520dc01624571083fac0a74421"
+      url "https://github.com/andreas-bergstrom/gdui/releases/download/v0.4.0/gdui_0.4.0_darwin_amd64.tar.gz"
+      sha256 "605d6b0e870829adc8ca8159cd25d06c796a7b1d78f30328befc1eaea6242ef0"
 
       define_method(:install) do
         bin.install "gdui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/andreas-bergstrom/gdui/releases/download/v0.3.0/gdui_0.3.0_darwin_arm64.tar.gz"
-      sha256 "df80a6d5440c36d8ddeb9741123d804aa4200e1cfe4ed3d7de3c81110068519e"
+      url "https://github.com/andreas-bergstrom/gdui/releases/download/v0.4.0/gdui_0.4.0_darwin_arm64.tar.gz"
+      sha256 "621a9cbb2f6afa1ab39d2929407d2f14efc0ed74b170bd976dba6d300545444c"
 
       define_method(:install) do
         bin.install "gdui"
@@ -29,15 +29,15 @@ class Gdui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andreas-bergstrom/gdui/releases/download/v0.3.0/gdui_0.3.0_linux_amd64.tar.gz"
-      sha256 "11f4197ecfd31305c41fb30de15b5a98982d1e40eb62b6b25e14ec781acdde20"
+      url "https://github.com/andreas-bergstrom/gdui/releases/download/v0.4.0/gdui_0.4.0_linux_amd64.tar.gz"
+      sha256 "a321d6d206c5fa7afdd0bc2c8677b4d3495d7762f4ff92d9db3a1e29bb801168"
       define_method(:install) do
         bin.install "gdui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andreas-bergstrom/gdui/releases/download/v0.3.0/gdui_0.3.0_linux_arm64.tar.gz"
-      sha256 "635a3b6ad6ec4f133c5e6d1c7dcae39dea6f4bad992b7dfd26f73f0c677f414d"
+      url "https://github.com/andreas-bergstrom/gdui/releases/download/v0.4.0/gdui_0.4.0_linux_arm64.tar.gz"
+      sha256 "13edc75b95635a4a5228f04d9bc41047761017b29535a020c21134e45eeb766f"
       define_method(:install) do
         bin.install "gdui"
       end
